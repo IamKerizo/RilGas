@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      margin: 0;
+      font-family: 'Roboto' , Arial;
+      
+    }
+    
+    .Blue {
+      background-color: #1f53f1;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      margin-bottom: 115px;
+    }
+    
+    .gcash-logo {
+      width: 130px;
+      position: absolute;
+      
+    }
+    
+    .white-container {
+      background-color: white;
+      right: 18px;
+      left: 18px;
+      height: 250px;
+      position: absolute;
+      z-index: 100;
+      top: 65px;
+      border-radius: 6px;
+      box-shadow: 0px 0px 4px rgba( 0, 0, 0, 0.5);
+    }
+    /*
+    @media (min-width: 920px) {
+      .white-container {
+        right: 785px;
+        left: 785px;
+      }
+    }
+    */
+    .white-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
+    }
+    
+    .Log {
+      margin-left: -115px;
+      font-weight: 700;
+      font-size: 17px;
+    }
+    
+    .Info-numbers {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .Phno {
+      width: 50px;
+      border-bottom: 1px solid #cfcfcf;
+      height: 31px;
+      display: flex;
+      position: relative;
+    }
+    
+    .ina {
+      font-size: 16px;
+      height: 30px;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+    
+    .Uno {
+      flex: 1;
+      font-weight: 400;
+    }
+    
+    .Mobile-Number {
+      padding-top: 8px;
+      padding-right: 8px;
+      padding-bottom: 8px;
+      padding-left: 10px;
+      border-bottom: 1px solid #cfcfcf ;
+      border-top: none;
+      border-right: none;
+      border-left: 1px solid #cfcfcf;
+    }
+    
+    .Mobile-Number::placeholder {
+      margin: 0;
+      font-size: 15px;
+      color: #d8d8d8;
+    }
+    
+    .Mobile-Number:active  {
+      border: none;
+    }
+    
+    .next-button {
+      padding: 13px 128px;
+      border-radius: 25px;
+      border-style: none;
+      background-color: rgba(71,153,248, 0.7);
+      color: white;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    
+    p {
+      text-align: center;
+      color: rgb(121,121,121);
+    }
+  
+    .Reg {
+      color: blue;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="Blue">
+    <img class="gcash-logo" src="Awit.png"/>
+  </div>
+  
+ 
+  <section class="white-container">
+    <div class="Log">Login to pay with GCash</div>
+  
+      <div class="Info-numbers">
+        <div class="Phno">
+          <p class="ina">+63</p>
+        </div>
+        <div class="Uno">
+          <input class="Mobile-Number" type="text" placeholder="Mobile number" />
+        </div>       
+     </div>
+  
+    <div>
+      <button class="next-button">NEXT</button>
+    </div>
+  </section>
+  
+  <p class="Gcash">Don’t have a GCash account? <span class="Reg">Register now</span></p>
+</body>
+</html>
